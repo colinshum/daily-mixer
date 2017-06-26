@@ -1,7 +1,7 @@
 # ---------------------------------------------------------
 # daily mix/discovery tool for spotify users
 # created by @colinshum
-# enjoy the chunes for your headtop
+# consider your headtops blessed with the good chunes
 # ---------------------------------------------------------
 # to install dependencies in terminal: pip install spotipy
 # create your developer app at http://developer.spotify.com
