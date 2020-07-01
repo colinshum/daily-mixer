@@ -42,7 +42,7 @@ sp.trace = False
 
 
 def top_tracks():
-    print("This app will now generate a new playlist for your account. Please check your Spotify for today's Daily Mix!")
+    print("This app will now generate a new playlist for your account. Please check your Spotify for your On Demand Mix!")
     results = sp.current_user_top_tracks(time_range='long_term', limit=5)
     track_uri = []
 
@@ -56,7 +56,7 @@ def top_tracks():
     for track in recos['tracks']:
         reco_uri.append(track['uri'])
 
-    playlists = sp.user_playlist_create(username, 'Colin\'s God Tier Daily Mix')
+    playlists = sp.user_playlist_create(username, 'Colin\'s On Demand Mix')
 
     existing = sp.user_playlists(username, limit=1)
     for item in existing['items']:
